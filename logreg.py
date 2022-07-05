@@ -10,7 +10,7 @@ import numpy as np
 a = pd.read_csv(r"https://raw.githubusercontent.com/codebasics/py/master/ML/7_logistic_reg/insurance_data.csv")
 dfs = pd.DataFrame(a)
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(dfs[['age']],dfs.bought_insurance,train_size=0.8,random_state=100)
+X_train, X_test, y_train, y_test = train_test_split(dfs[['age']],dfs.bought_insuransce,train_size=0.8,random_state=100)
 from sklearn.linear_model import LogisticRegression	
 model = LogisticRegression()
 model.fit(X_train, y_train)
